@@ -2,7 +2,19 @@
     --main: darkred;
     --sec: #C67F7F;
     --acc: #ececec;
-    --fontMain:'Nova Square', cursive;
+    --fontMain: 'Nova Square', cursive;
+}
+
+.classeRaja {
+   font-family: "Rajdhani";
+}
+
+.colorGrey {
+    background-color: rgb(236, 236, 236);
+}
+
+.colorDarkred {
+    color: darkred;
 }
 
 body {
@@ -20,10 +32,12 @@ h1 {
     color: var(--main);
     font-family: var(--fontMain);
     letter-spacing: 80px;
-   
+
+
 }
 
-.divBlockquote, .timeline {
+.divBlockquote,
+.timeline {
     background-color: rgb(236, 236, 236);
 }
 
@@ -38,10 +52,10 @@ h1 {
 }
 
 .blockquoteStyle {
-   font-family:  "Rajdhani";
-   font-style: italic;
-   color: grey;
-   position: relative;
+    font-family: "Rajdhani";
+    font-style: italic;
+    color: grey;
+    position: relative;
 
 }
 
@@ -53,8 +67,8 @@ h1 {
     font-weight: bold;
     left: -20px;
     top: -25px;
-    
-    
+
+
 }
 
 .blockquoteStyle::after {
@@ -63,8 +77,8 @@ h1 {
     color: var(--main);
     font-size: 60px;
     font-weight: bold;
-    
-    
+
+
 }
 
 
@@ -72,17 +86,20 @@ h1 {
     color: darkred;
 }
 
-.pCard {
-    font-family:  "Rajdhani";
+.pCard,
+.pCard5 {
+    font-family: "Rajdhani";
 }
 
+
 .pCard2 {
-    font-family:  "Rajdhani";
+    font-family: "Rajdhani";
     color: grey;
 }
 
-h2, h3 {
- 
+h2,
+h3 {
+
     color: darkred;
     font-family: var(--fontMain);
 
@@ -95,26 +112,28 @@ h2, h3 {
     border: 2px solid var(--main);
     position: absolute;
     bottom: -10px;
-    
+
 }
 
-.section2, .sectionCard, .section3 {
+.section2,
+.sectionCard,
+.section3 {
     margin-top: 10%;
 }
 
 .section3 {
-background-image: url(./img/trees2.png);
-height: 55vh;
+    background-image: url(./img/trees2.png);
+    height: 55vh;
 
 
 }
 
 .btnSection3 {
-background-color: var(--main);
-font-family: var(--fontMain);
-color: white;
-border: none;
-padding: 12px 50px;
+    background-color: var(--main);
+    font-family: var(--fontMain);
+    color: white;
+    border: none;
+    padding: 12px 50px;
 
 }
 
@@ -138,24 +157,36 @@ padding: 12px 50px;
 .sect4Div {
     position: relative;
     background-color: white;
-    
+
 }
 
-.sect4Div > img {
+.sect4Div>img {
     position: absolute;
     bottom: 0%;
     right: 8%;
 }
 
 .styleCardSec4 {
-    border:0;
+    border: 0;
     border-left: 4px solid var(--main);
-   
+
 }
 
 
 .styleCard5 {
-border-radius: 80%;
+    align-self: center;
+    width: 140px;
+    height: 140px;
+    border-color: darkred;
+    border-style: solid;
+    padding: 6px;
+    border-radius: 50%;
+}
 
-
+.imgBenefit {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    border: 2px solid darkred;
+    padding: 7px;
 }
