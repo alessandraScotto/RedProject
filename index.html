@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Alegreya+Sans:wght@300;400;500&family=Dancing+Script:wght@500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nova+Square&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Quicksand:wght@500;600;700&family=Rajdhani:wght@600;700&family=Raleway:ital,wght@0,200;0,300;1,100;1,200&family=Roboto:ital,wght@0,300;1,100&family=Unbounded:wght@300;400&display=swap"
+        rel="stylesheet">
+    <!--Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--Bootstrap icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--Personal css-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!--NAVBAR E LOGO-->
+    <nav class="container-fluid bg-white">
+        <div class="row p-0">
+            <div class="col-12 d-flex justify-content-center">
+                <img src="./img/logo.png" width="8%" alt="logo">
+            </div>
+        </div>
+        <div class="row p-0">
+            <div class="col-12 p-0">
+                <nav class="navbar navbar-expand-lg">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse  d-flex justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav fs-5">
+                            <li class="nav-item me-5 pe-5">
+                                <a class="nav-link" href="#">Primo link</a>
+                            </li>
+                            <li class="nav-item me-5 pe-5">
+                                <a class="nav-link" href="#">Altro link</a>
+                            </li>
+                            <li class="nav-item me-5 pe-5">
+                                <a class="nav-link" href="#">Terzo link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Ultimo link</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <!--HEADER-->
+
+    <header class="position-relative container-fluid min-vh-100 w-100 d-flex align-items-center justify-content-center">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="display-1">LOREM</h1>
+            </div>
+            <div class="col-12">
+                <img class="w-100 img-fluid position-absolute bottom-0 start-0" src="./img/mountains2.png"
+                    alt="mountains">
+            </div>
+        </div>
+    </header>
+
+    <!--Blockquote-->
+    <div class="container-fluid mb-5 p-0">
+        <div class="row m-0 p-0 justify-content-center">
+            <div class="divBlockquote col-12 col-md-5 d-flex justify-content-center align-items-center text-center">
+                <blockquote class="blockquoteStyle fs-4">Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Placeat qui blanditiis id quo! Optio a
+                    cupidiate nam sequi, facilis velit. Qui voluptas porro esse reprehenderit! Cum consequatur id
+                    hic deleniti.</blockquote>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Card-->
+    <div class="sectionCard container-fluid">
+        <div class="row d-flex justify-content-evenly">
+            <div class="col-md-2">
+                <div class="styleCard card" style="width: 18rem;">
+                    <i class="icoN bi bi-snow fs-2 text-center"></i>
+                    <div class="card-body">
+                        <p class="pCard card-text text-center">Lorem ipsum dolor</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button id="tondino"></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-2 m-0 p-0">
+                <div class="styleCard card m-0 p-0" style="width: 18rem;">
+
+                    <i class="icoN bi bi-map-fill fs-2 text-center"></i>
+
+                    <div class="card-body">
+                        <p class="pCard card-text text-center">Lorem ipsum dolor</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button id="tondino"></button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-md-2 m-0 p-0">
+                <div class="styleCard card m-0 p-0" style="width: 18rem;">
+                    <i class="icoN bi bi-browser-firefox text-center fs-2"></i>
+                    <div class="card-body">
+                        <p class="pCard card-text text-center">Lorem ipsum dolor</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button id="tondino"></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-2 m-0 p-0">
+                <div class="styleCard card m-0 p-0" style="width: 18rem;">
+                    <i class="icoN bi bi-fire text-center fs-2"></i>
+                    <div class="card-body">
+                        <p class="pCard card-text text-center">Lorem ipsum dolor</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button id="tondino"></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--Section 2-->
+    <div class="section2 container-fluid">
+        <div class="row d-flex justify-content-evenly">
+            <div class="col-5 align-content-start text-start">
+                <h2>Lorem, Ipsum Dolor Sit</h2>
+                <p class="pCard2 fs-4 fw-lighter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vero
+                    quas, corrupti repudiandae
+                    dolorem eos vel repellat a et fuga rerum deserunt sint neque maxime nam temporibus eius eaque
+                    tenetur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui porro incidunt blanditiis eum
+                    hic cumque. Ullam adipisci vitae incidunt reiciendis accusantium rem dicta placeat autem, blanditiis
+                    nihil assumenda, eaque eius? </p>
+
+            </div>
+            <div class="col-5 align-content-end text-end">
+                <h2>Lorem, Ipsum Dolor Sit</h2>
+                <p class="pCard2 fs-4 fw-lighter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vero
+                    quas, corrupti repudiandae
+                    dolorem eos vel repellat a et fuga rerum deserunt sint neque maxime nam temporibus eius eaque
+                    tenetur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui porro incidunt blanditiis eum
+                    hic cumque. Ullam adipisci vitae incidunt reiciendis accusantium rem dicta placeat autem, blanditiis
+                    nihil assumenda, eaque eius?</p>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--Section 3-->
+    <div class="section3 d-flex justify-content-center align-items-center">
+        <button class="btnSection3">LOREM IPSUM</button>
+    </div>
+
+    <!--Section 4 - Timeline-->
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-6 p-0 m-0 bg-white">
+                <div class="row p-0 m-0 justify-content-center">
+                    <div class="col-11">
+                        <h2 class="fs-1 fw-light mb-5">OUR TIMELINE</h2>
+                    </div>
+
+                    <div class="col-11 p-0 m-0">
+                        <div class="styleCardSec4 p-0 m-0" style="width: 100%;">
+                            <div class="card-body pb-5 p-0 ms-3 m-0">
+                                <h3 class="h3PseudoEl card-title fs-2 mb-3">Lorem Ipsum</h3>
+                                <p class="pCard2 card-text text-dark fs-4">Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit.
+                                    Recusandae
+                                    reiciendis consequatur non cupiditate optio eos dolores magni sequi necessitatibus.
+                                    Ex amet,
+                                    ipsum molestiae consectetur nobis sed vero quibusdam officia veritatis! Lorem ipsum
+                                    dolor sit.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-11 p-0 m-0">
+                        <div class="styleCardSec4 p-0 m-0" style="width: 100%;">
+                            <div class="card-body pb-5 p-0 ms-3 m-0">
+                                <h3 class="h3PseudoEl card-title fs-2 mb-3">Lorem Ipsum</h3>
+                                <p class="pCard2 card-text text-dark fs-4">Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit.
+                                    Recusandae
+                                    reiciendis consequatur non cupiditate optio eos dolores magni sequi necessitatibus.
+                                    Ex amet,
+                                    ipsum molestiae consectetur nobis sed vero quibusdam officia veritatis! Lorem ipsum
+                                    dolor sit.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-11 p-0 m-0">
+                        <div class="styleCardSec4 p-0 m-0" style="width: 100%;">
+                            <div class="card-body pb-5 p-0 ms-3 m-0">
+                                <h3 class="h3PseudoEl card-title fs-2 mb-3">Lorem Ipsum</h3>
+                                <p class="pCard2 card-text text-dark fs-4">Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit.
+                                    Recusandae
+                                    reiciendis consequatur non cupiditate optio eos dolores magni sequi necessitatibus.
+                                    Ex amet,
+                                    ipsum molestiae consectetur nobis sed vero quibusdam officia veritatis! Lorem ipsum
+                                    dolor sit.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-11 p-0 m-0">
+                        <div class="styleCardSec4 p-0 m-0" style="width: 100%;">
+                            <div class="card-body p-0 ms-3 m-0">
+                                <h3 class="h3PseudoEl card-title fs-2">Lorem Ipsum</h3>
+                                <p class="pCard2 card-text text-dark fs-4">Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit.
+                                    Recusandae
+                                    reiciendis consequatur non cupiditate optio eos dolores magni sequi necessitatibus.
+                                    Ex amet,
+                                    ipsum molestiae consectetur nobis sed vero quibusdam officia veritatis! Lorem ipsum
+                                    dolor sit.</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="sect4Div col-6 p-0 m-0">
+                <img class="img-fluid" src="./img/single.png" width=80% alt="trees">
+            </div>
+        </div>
+    </div>
+ 
+
+    <!--Section 5 - Cards -->
+
+    <section class="container-flui">
+        <div class="row justify-content-evenly align-items-center">
+           
+            <div class="col-md-2">
+                <div class="card" style="width: 18rem;">
+                    <img class="styleCard5" src="./img/fog.jpg" alt="">
+                    <div class="card-body">
+                        <p class="pCard card-text text-center">Lorem ipsum dolor</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button></button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        
+
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

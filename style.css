@@ -1,0 +1,161 @@
+:root {
+    --main: darkred;
+    --sec: #C67F7F;
+    --acc: #ececec;
+    --fontMain:'Nova Square', cursive;
+}
+
+body {
+    background-color: rgb(236, 236, 236);
+}
+
+
+header {
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(0, 0, 0, 0)), url(./img/switzerland-862870_1920.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    color: var(--main);
+    font-family: var(--fontMain);
+    letter-spacing: 80px;
+   
+}
+
+.divBlockquote, .timeline {
+    background-color: rgb(236, 236, 236);
+}
+
+.styleCard {
+    background-color: rgb(236, 236, 236);
+    border-color: darkred !important;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: solid;
+    border-radius: 0;
+}
+
+.blockquoteStyle {
+   font-family:  "Rajdhani";
+   font-style: italic;
+   color: grey;
+   position: relative;
+
+}
+
+.blockquoteStyle::before {
+    position: absolute;
+    content: open-quote;
+    color: var(--main);
+    font-size: 60px;
+    font-weight: bold;
+    left: -20px;
+    top: -25px;
+    
+    
+}
+
+.blockquoteStyle::after {
+    position: absolute;
+    content: close-quote;
+    color: var(--main);
+    font-size: 60px;
+    font-weight: bold;
+    
+    
+}
+
+
+.icoN {
+    color: darkred;
+}
+
+.pCard {
+    font-family:  "Rajdhani";
+}
+
+.pCard2 {
+    font-family:  "Rajdhani";
+    color: grey;
+}
+
+h2, h3 {
+ 
+    color: darkred;
+    font-family: var(--fontMain);
+
+}
+
+#tondino {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 2px solid var(--main);
+    position: absolute;
+    bottom: -10px;
+    
+}
+
+.section2, .sectionCard, .section3 {
+    margin-top: 10%;
+}
+
+.section3 {
+background-image: url(./img/trees2.png);
+height: 55vh;
+
+
+}
+
+.btnSection3 {
+background-color: var(--main);
+font-family: var(--fontMain);
+color: white;
+border: none;
+padding: 12px 50px;
+
+}
+
+.h3PseudoEl {
+    position: relative;
+}
+
+.h3PseudoEl::before {
+    content: " ";
+    border: 2px solid var(--main);
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: -27px;
+    background-color: white;
+
+}
+
+
+.sect4Div {
+    position: relative;
+    background-color: white;
+    
+}
+
+.sect4Div > img {
+    position: absolute;
+    bottom: 0%;
+    right: 8%;
+}
+
+.styleCardSec4 {
+    border:0;
+    border-left: 4px solid var(--main);
+   
+}
+
+
+.styleCard5 {
+border-radius: 80%;
+
+
+}
