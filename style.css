@@ -6,7 +6,7 @@
 }
 
 .classeRaja {
-   font-family: "Rajdhani";
+   font-family: "Rajdhani" normal;
 }
 
 .colorGrey {
@@ -18,7 +18,8 @@
 }
 
 body {
-    background-color: rgb(236, 236, 236);
+   background-color: rgb(236, 236, 236);
+
 }
 
 
@@ -189,4 +190,9 @@ h3 {
     height: 250px;
     border: 2px solid darkred;
     padding: 7px;
+}
+
+footer {
+    background-color: var(--main);
+    
 }

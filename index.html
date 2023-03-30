@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,32 +24,37 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body class="container-fluid m-0 p-0">
 
-    <!--NAVBAR E LOGO-->
+    <!--NAVBAR-->
     <nav class="container-fluid bg-white">
-        <div class="row p-0">
-            <div class="col-12 d-flex justify-content-center">
-                <img src="./img/logo.png" width="8%" alt="logo">
-            </div>
-        </div>
-        <div class="row p-0">
-            <div class="col-12 p-0">
-                <nav class="navbar navbar-expand-lg">
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse  d-flex justify-content-center" id="navbarNav">
-                        <ul class="navbar-nav fs-5">
-                            <li class="nav-item me-5 pe-5">
+        <div class="row p-0">
+            <div class="col-6 col-md-12 d-flex justify-content-md-center">
+                <img src="./img/logo.png" width="100px" height="50px" alt="logo">
+            </div>
+            <div class="col-6 col-md-12 p-0">
+                <nav class="navbar navbar-expand-lg d-flex justify-content-end justify-content-md-center">
+                    <div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                    </div>
+
+
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-md-auto fs-5 mb-lg-0">
+                            <li class="nav-item me-md-5 pe-md-5">
                                 <a class="nav-link" href="#">Primo link</a>
                             </li>
-                            <li class="nav-item me-5 pe-5">
+                            <li class="nav-item me-md-5 pe-md-5">
                                 <a class="nav-link" href="#">Altro link</a>
                             </li>
-                            <li class="nav-item me-5 pe-5">
+                            <li class="nav-item me-md-5 pe-md-5">
                                 <a class="nav-link" href="#">Terzo link</a>
                             </li>
                             <li class="nav-item">
@@ -67,9 +74,18 @@
     <!--HEADER-->
 
     <header class="position-relative container-fluid min-vh-100 d-flex align-items-center justify-content-center">
-        <div class="row w-100">
+        <div class="row w-100 d-none d-md-block">
             <div class="col-12 d-flex justify-content-center">
                 <h1 class="display-2">LOREM</h1>
+            </div>
+            <div class="col-12">
+                <img class="w-100 img-fluid position-absolute bottom-0 start-0" src="./img/mountains2.png"
+                    alt="mountains">
+            </div>
+        </div>
+        <div class="row w-100 d-md-none d-block">
+            <div class="col-12 d-flex justify-content-center">
+                <h2 class="fs-1">LOREM</h2>
             </div>
             <div class="col-12">
                 <img class="w-100 img-fluid position-absolute bottom-0 start-0" src="./img/mountains2.png"
@@ -79,7 +95,7 @@
     </header>
 
     <!--Blockquote-->
-    <div class="container-fluid mb-5 p-0">
+    <div class="container-fluid mb-5 mt-5 p-0">
         <div class="row m-0 p-0 justify-content-center">
             <div class="divBlockquote col-lg-6 col-12 d-flex justify-content-center align-items-center text-center">
                 <blockquote class="blockquoteStyle fs-4">Lorem ipsum
@@ -93,14 +109,14 @@
 
     <!--Card-->
     <div class="sectionCard container-fluid">
-        <div class="row d-flex justify-content-sm-center justify-content-md-evenly ">
+        <div class="row d-flex justify-content-center justify-content-md-evenly ">
             <div class="col-md-2 col-sm-12">
                 <div class="styleCard card">
-                    <i class="icoN bi bi-snow fs-2 text-center"></i>
+                    <i class="icoN text-center fs-2 fa-solid fa-snowflake"></i>
                     <div class="card-body">
                         <p class="pCard card-text text-center">Lorem ipsum dolor</p>
                     </div>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-md-flex d-none justify-content-center">
                         <button id="tondino"></button>
                     </div>
                 </div>
@@ -109,13 +125,11 @@
 
             <div class="col-md-2 col-sm-12">
                 <div class="styleCard card m-0 p-0">
-
-                    <i class="icoN bi bi-map-fill fs-2 text-center"></i>
-
+                    <i class="icoN fs-2 text-center fa-solid fa-map"></i>
                     <div class="card-body">
                         <p class="pCard card-text text-center">Lorem ipsum dolor</p>
                     </div>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-md-flex d-none justify-content-center">
                         <button id="tondino"></button>
                     </div>
 
@@ -125,11 +139,11 @@
 
             <div class="col-md-2 col-sm-12">
                 <div class="styleCard card m-0 p-0">
-                    <i class="icoN bi bi-browser-firefox text-center fs-2"></i>
+                    <i class="icoN fa-solid fa-mountain fs-2 text-center"></i>
                     <div class="card-body">
                         <p class="pCard card-text text-center">Lorem ipsum dolor</p>
                     </div>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-md-flex d-none justify-content-center">
                         <button id="tondino"></button>
                     </div>
                 </div>
@@ -138,11 +152,11 @@
 
             <div class="col-md-2 col-sm-12">
                 <div class="styleCard card m-0 p-0">
-                    <i class="icoN bi bi-fire text-center fs-2"></i>
+                    <i class="icoN fs-2 text-center fa-solid fa-campground"></i>
                     <div class="card-body">
                         <p class="pCard card-text text-center">Lorem ipsum dolor</p>
                     </div>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-md-flex d-none justify-content-center">
                         <button id="tondino"></button>
                     </div>
                 </div>
@@ -153,9 +167,9 @@
 
 
     <!--Section 2-->
-    <div class="section2 container-fluid">
+    <div class="section2 container-fluid ">
         <div class="row d-flex justify-content-evenly">
-            <div class="col-5 align-content-start text-start">
+            <div class="col-12 col-md-5 align-content-start text-center text-md-start">
                 <h2>Lorem, Ipsum Dolor Sit</h2>
                 <p class="pCard2 fs-4 fw-lighter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vero
                     quas, corrupti repudiandae
@@ -165,7 +179,7 @@
                     nihil assumenda, eaque eius? </p>
 
             </div>
-            <div class="col-5 align-content-end text-end">
+            <div class="col-12 col-md-5 align-content-end text-center text-md-end">
                 <h2>Lorem, Ipsum Dolor Sit</h2>
                 <p class="pCard2 fs-4 fw-lighter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vero
                     quas, corrupti repudiandae
@@ -180,7 +194,7 @@
     </div>
 
     <!--Section 3-->
-    <div class="section3 d-flex justify-content-center align-items-center">
+    <div class="section3 d-flex justify-content-center align-items-center ">
         <button class="btnSection3">LOREM IPSUM</button>
     </div>
 
@@ -270,7 +284,7 @@
     </div>
 
 
-    <!--Section 5 - Cards -->
+    <!--Section 5 - Cards - Our team -->
 
     <section class="container-fluid mt-md-5">
         <div class="row justify-content-evenly align-items-center">
@@ -355,30 +369,32 @@
 
     <!--Section 5 - Our Benefit -->
     <div class="container-fluid mt-5 pt-5">
-    
+
         <div class="row justify-content-center align-items-center">
             <div class="col-12">
                 <h2 class="ms-5 ps-5 fs-2">OUR BENEFIT</h2>
             </div>
-            <div class="col-5">
+            <div class="col-md-5 col-sm-12">
                 <h2>Lorem ipsum dolo</h2>
-                <p class="text-dark classeRaja fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quam ipsum quaerat cum omnis
+                <p class="text-dark classeRaja fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                    quam ipsum quaerat cum omnis
                     adipisci dolor alias, fuga est eius molestias exercitationem ex architecto libero corporis,
                     repellendus illo veniam sequi. Deserunt quam ipsum quaerat cum omnis
                     adipisci dolor alias, fuga est eius molestias exercitationem ex architecto libero corporis,
                     repellendus illo veniam sequi.</p>
             </div>
-            <div class="col-5 d-flex justify-content-center align-items-center">
+            <div class="col-md-5 col-sm-12 d-flex justify-content-center align-items-center">
                 <img class="imgBenefit" src="./img/landscape-975091_1920.jpg" alt="img">
             </div>
         </div>
         <div class="row justify-content-center align-items-center mt-5">
-            <div class="col-5 d-flex justify-content-center align-content-center">
+            <div class="col-md-5 col-sm-12 d-flex justify-content-center align-content-center">
                 <img class="imgBenefit" src="./img/landscape-975091_1920.jpg" alt="img">
             </div>
-            <div class="col-5">
+            <div class="col-md-5 col-sm-12">
                 <h2>Lorem ipsum dolo</h2>
-                <p class="text-black classeRaja fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quam ipsum quaerat cum omnis
+                <p class="text-black classeRaja fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                    quam ipsum quaerat cum omnis
                     adipisci dolor alias, fuga est eius molestias exercitationem ex architecto libero corporis,
                     repellendus illo veniam sequi. Deserunt quam ipsum quaerat cum omnis
                     adipisci dolor alias, fuga est eius molestias exercitationem ex architecto libero corporis,
@@ -387,8 +403,66 @@
 
         </div>
 
-
     </div>
+
+    <!--Section 6 - Mountains Red-->
+    <div class="container-fluid p-0 m-0">
+        <div class="row p-0 m-0">
+            <div class="col-12 p-0 m-0">
+                <img class="img-fluid" src="./img/other.png" width="100%" alt="Other Mountains">
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="container-fluid">
+           
+            <div class="row text-white justify-content-around">
+                <div class="col-12 ps-5 m-0 d-flex d-md-block justify-content-center">
+                    <h2 class="fs-1 text-white">LOREM</h2>
+                </div>
+                <div class="col-md-8 col-12">
+                    <div class="row">
+                     
+                        <div class="col-12">
+                            <h3 class="text-white">Testo generico</h3>
+                        </div>
+                        <div class="col-12">
+                            <p class="classeRaja fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Corrupti,
+                                illo.
+                                Repellendus, alias ratione ex dicta accusantium enim temporibus magnam exercitationem.
+                                Dolore asperiores deserunt ipsum impedit nihil blanditiis odit, harum tenetur?</p>
+                        </div>
+                        <div class="col-12">
+                            <p class="classeRaja fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Corrupti,
+                                illo.
+                                Repellendus, alias ratione ex dicta accusantium enim temporibus magnam exercitationem.
+                                Dolore asperiores deserunt ipsum impedit nihil blanditiis odit, harum tenetur?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="text-white">QUICK LINK</h3>
+                        </div>
+                        <div class="col-12 classeRaja">
+                            <ul>
+                                <li class="mb-2">Lorem link</li>
+                                <li class="mb-2">Lorem link</li>
+                                <li class="mb-2">Lorem link</li>
+                                <li>Lorem link</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
